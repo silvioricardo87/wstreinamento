@@ -6,3 +6,4 @@
 !src/**/*
 !pom.xml
 !docs
+!docs/*
