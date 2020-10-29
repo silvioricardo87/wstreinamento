@@ -1,11 +1,11 @@
 spring:
   profiles:
-    active: deleteMe
+    active: dev
 
 ---
 # Coloque aqui suas configurações de Desenvolvimento
 spring:
-  profiles: dev
+  profiles: prod
 
 ---
 # Coloque aqui suas configurações de Homologação
@@ -14,8 +14,9 @@ spring:
 
 ---
 spring:
-  profiles: deleteMe
+  profiles: dev
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: sa
-    password: password
+    url: jdbc:postgresql://localhost:5432/teste
+    username: teste
+    password: teste
+    driver-class-name: org.postgresql.Driver
